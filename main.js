@@ -21,7 +21,6 @@ const linkedList = () => {
   const prepend = (value) => {
       head = Node(value, head)
       return head
-    
   }
   
   
@@ -179,6 +178,7 @@ console.log(`"${head.value}" is the first node`)
     
     if(!head) {
       console.log("linked list is empty")
+      return
     }
     if(index < 0) {
       console.log("rangeError")
